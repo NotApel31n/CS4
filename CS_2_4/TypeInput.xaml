@@ -1,0 +1,19 @@
+﻿<Window x:Class="CS_2_4.TypeInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS_2_4"
+        mc:Ignorable="d"
+        Title="TypeInput" Height="200" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="81*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Enter type name" Margin="82,13,82,0" TextAlignment="Center" FontSize="16px" Height="25" VerticalAlignment="Top"/>
+        <TextBox x:Name="typeInner" Margin="30,7,30,0" Grid.Row="1" Height="34" VerticalAlignment="Top"/>
+        <Button x:Name="saveInputed" Content="Save" Margin="30,23,30,0" Grid.Row="2" Height="25" VerticalAlignment="Top" Click="saveInputed_Click"/>
+    </Grid>
+</Window>
